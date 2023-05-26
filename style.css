@@ -98,7 +98,6 @@ header{
     font-size: 80px;
     font-weight: bolder;
     padding: 2% 4% 3% 1%;
-
 }
 
 .shed{
@@ -238,18 +237,18 @@ header{
 }
 
 .conments{
-    position: absolute;
-    /* top: 100%; */
-    margin-bottom: 12%;
-    padding-right: 16%;
-    margin-left: 17%;
+    position: relative;
+    bottom: 13%;
+    left: 20%;
+    padding-right: 14%;
+    padding-left: 15%;
 }
 
 .che-bouble{
     font-size: 14px;
     font-weight: 400;
-    margin-bottom: 15%;
-    margin-left: 60%;
+    padding-top: 10%;
+    padding-right: 35%;
 }
 
 .che-bouble span {
