@@ -20,7 +20,7 @@ header{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 3rem;
+    padding: 2rem;
     /* margin: 2% 5% 0 5%; */
 }
 
@@ -82,10 +82,7 @@ header{
 .section-one-container{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    /* align-items: center;
-    justify-content: center; */
-    padding: 3rem;
-    /* width: 100%; */
+    /* padding: 3rem; */
 }
 
 
@@ -106,7 +103,7 @@ header{
 
 .shed{
     position: absolute;
-    top: 65%;
+    top: 50%;
     left:2%;
     z-index: -1;
 }
@@ -147,7 +144,7 @@ header{
 .photo-1-child{
     position: absolute;
     width: 22%;
-    margin-top: 10%;
+    margin-top: 6%;
     /* margin-bottom: 1%; */
     margin-left: 7%; 
     z-index: -1;
@@ -155,7 +152,7 @@ header{
 
 .photo-2-child{
     width: 40%;
-    margin-top: 10%;
+    margin-top: 2%;
     margin-right: 40%;
     margin-left: 15%;
     z-index: 1;
@@ -166,7 +163,7 @@ header{
     background-color: #7F3DD2;
     border-radius: 50%;
     left: 80%;
-    top: 50%;
+    top: 30%;
     padding-top: 2%;
     padding-bottom: 2%;
     padding-left: 2%;
@@ -179,7 +176,7 @@ header{
     background-color: #1FC77E;
     border-radius: 50%;
     right: 40%;
-    top: 70%;
+    top: 50%;
     padding-top: 2%;
     padding-bottom: 2%;
     padding-left: 2%;
@@ -210,39 +207,40 @@ header{
 }
 
 .office{
-    width: 32%;
+    width: 30%;
     position: absolute;
-    right: 12%;
-    top: 95%;
+    right: 14%;
+    top: 75%;
     z-index: -1;
 }
 
 .coloring{
     position: absolute;
     width: 22%;
-    top: 115%;
+    top: 92%;
     left: 55%;
     z-index: -1;
 }
 
 .smile-lady{
-    position: relative;
-    width: 100%;
-    left: 10%;
-    /* top: 20%; */
+    position: absolute;
+    width: 20%;
+    left: 55%;
+    top: 70%;
     /* margin-bottom: 0%; */
     z-index: 1;
 }
 
 .flex-colors{
-    margin-top: 20%;
-    margin-right: 20%;
+    position: absolute;
+    top: 95%;
+    right: 13%;
 }
 
 .conments{
     position: absolute;
     /* top: 100%; */
-    margin-bottom: 10%;
+    margin-bottom: 12%;
     padding-right: 16%;
     margin-left: 17%;
 }
@@ -250,8 +248,8 @@ header{
 .che-bouble{
     font-size: 14px;
     font-weight: 400;
-    margin-bottom: 10%;
-    margin-left: 20%;
+    margin-bottom: 15%;
+    margin-left: 60%;
 }
 
 .che-bouble span {
@@ -272,7 +270,7 @@ header{
  display: flex;
  align-items: center;
  justify-content: center;
- padding: 3rem;
+ padding: 6rem;
 }
 
 /* image section start */
@@ -288,34 +286,36 @@ header{
 
 .facebook-image{
     position: absolute;
- border-radius: 50%;
+    border-radius: 50%;
     background-color: #FFFFFF;
-left: 0;
+    left: -12%;
     top: 15%;
-    padding: 4%;
+    padding: 5%;
 }
 
 .yello-rad{
     position: absolute;
-    width: 20%;
-right:-14%;
+    width: 30%;
+    right:-23%;
     top:15%;
     z-index: -1;
 }
 
  .green-rad{
     position: absolute;
-    width: 20%;
-    left: -5%;
-    bottom:10%;
+    width: 30%;
+    left: -15%;
+    bottom:20%;
     z-index: -1;
 }
 
 .whatsapp{
     position: absolute;
-right: -5%;
-    bottom: 5%;
+    right: -11%;
+    bottom: 10%;
     border-radius: 50%;
+    width: 30%;
+    padding: 3%;
     background-color: #FFFFFF;
 } 
 
@@ -405,7 +405,7 @@ right: -5%;
     font-weight: 400;
     font-family: 'FS Meridian Trial';
     left: 9%;
-    top: 287%;
+    top: 265%;
     padding-left: 1%;
 }
 
@@ -420,8 +420,8 @@ right: -5%;
 
 .star-logo{
     position: absolute;
-    top: 296%;
-    left: 68%;
+    top: 277%;
+    left: 64%;
 }
 
 .star-logo2{
