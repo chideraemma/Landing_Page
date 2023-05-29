@@ -8,11 +8,13 @@
 body{
     background-color: #111826;
     color: #FFFFFF;
-    width: 100%;
+    /* width: 100%; */
+    /* overflow: hidden; */
 }
 header{
     width: 100%;
     height: 100%;
+    overflow: hidden;
 }
 /* Navigation-meun-header start  */
  
@@ -25,14 +27,10 @@ header{
 }
 
 .logo{
-    width: 15%;
-    height: 10%;
-    /* margin-right: 30%; */
+    width: 20%;
 }
 
 .nav-links{
-    /* display: flex;
-    list-style-type: none; */
     flex: 1;
     text-align: right;
 }
@@ -41,12 +39,9 @@ header{
     list-style-type: none;
     display: inline-block;
     padding: 8px 12px;
-    /* position: relative; */
-    /* padding: 0 70px; */
 }
 
 .nav-links ul li a{
-    /* padding: 5px; */
     color: #FFFFFF;
     text-decoration: none;
     font-size: 17px;
@@ -64,9 +59,6 @@ header{
 
 .nav-links a:hover::after{
     width: 100%;
-    /* color: #FFFFFF;
-    padding: 5px;
-    text-decoration: underline; */
 }
 
 .header-menu .fas{
@@ -82,7 +74,6 @@ header{
 .section-one-container{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    /* padding: 3rem; */
 }
 
 
@@ -275,7 +266,6 @@ header{
 /* image section start */
 .meadi{
     position:relative;
-   
 }
 
 .orengs{
@@ -389,33 +379,34 @@ header{
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 3rem;
+    padding: 3rem 2rem;
 }
 
 .cloud{
-    /* display: flex; */
-    flex-direction: column;
+    display: flex;
+    /* align-items: center; */
+    /* flex-direction: column; */
 }
 
 .heading2{
-    width: 450px;
-    position: absolute;
+    width: 50%;
+    /* position: absolute; */
     font-size: 50px;
     font-weight: 400;
     font-family: 'FS Meridian Trial';
-    left: 9%;
-    top: 265%;
-    padding-left: 1%;
+    /* left: 9%;
+    top: 265%; */
+    /* padding-left: 1%; */
 }
 
 .heading2 span{
     color: #1FC77E;
 }
 
-.parent-logo{
+/* .parent-logo{
     display: flex;
     align-items: flex-end;
-}
+} */
 
 .star-logo{
     position: absolute;
@@ -443,9 +434,8 @@ header{
     padding: 1rem;
 }
 
-.icons{
+.icons .fas{
     color: #ffe100;
- 
 }
 
 .cards h5{
@@ -483,11 +473,8 @@ header{
     justify-content: center;
     position: absolute;
     background: #1FC77E;
-    padding-left: -1%;
-    padding-right: 7%;
     width: 70%;
     left: 15%;
-    margin: auto;
     margin-top: -10%;
     border: none;
     border-radius: 5px;
@@ -498,7 +485,6 @@ header{
     font-size: 42px;
     font-weight: 300;
     font-family: 'FS Meridian Trial';
-
 }
 
 .last-side span{
@@ -565,7 +551,7 @@ footer{
     padding-top: 1%;
 }
 
-.ip-sum span{
+.dolar{
     color: #1FC77E;
 }
 
@@ -615,7 +601,7 @@ footer{
     .nav-links{
         position: absolute;
         background: #f44336;
-        height: 80vh;
+        height: 100vh;
         width: 200px;
         top: 0;
         right: -200px;
@@ -632,24 +618,18 @@ footer{
         font-size: 22px;
         cursor: pointer;
     }
-    
-    .nav-links ul{
-        padding: 30px;
-    }
 
     .header-menu{
         display: flex;
         align-items: center;
         justify-content: space-between;
         overflow: hidden;
-        /* margin: 5% 5% 0 5%; */
     }
     
-    /* .logo{
+    .logo{
         width: 30%;
-        height: 10%;
-        margin-right: 30%;
-    } */
+        margin-bottom: 10%;
+    }
 
     .section-one-container{
         display: grid;
@@ -662,58 +642,46 @@ footer{
     .content{
         font-size: 40px;
         font-weight: bolder;
-        padding: 2% 4% 3% 1%;
-        margin-top: 35%;
+        padding: 25% 4% 3% 1%;
     }
     
     .shed{
-        width: 70%;
+        /* width: 70%;
         position: absolute;
         top: 34%;
         left:10%;
-        z-index: -1;
+        z-index;: -1; */
+        display:none;
     }
     
-    .section-one-content h3{
+    /* .section-one-content h3{
         margin: 0 0 3% 2%;
-    }
+    } */
 
     .photo-one{
         display: flex;
         align-items: center;
         position: absolute;
-        bottom: 80%;
+        bottom:78%;
     }
     
     .photo-1-child{
         position: absolute;
         width: 65%;
-        margin-top: 40%;
-        /* margin-bottom: 1%; */
-        margin-left: 7%; 
+        top: 50%; 
         z-index: -1;
     }
     
     .photo-2-child{
         width: 70%;
         padding-top: 23%;
-        /* margin-top: 34%; */
-        margin-right: 40%;
-        margin-left: 15%;
         z-index: 1;
     }
 
     .photo-two{
         position: absolute;
-        background-color: #7F3DD2;
-        border-radius: 50%;
-        left: 67%;
-        top: 11%;
-        padding-top: 3%;
-        padding-bottom: 2%;
-        padding-left: 3%;
-        padding-right: 3%;
-        z-index: 1;
+        left: 68%;
+        top: 14%;
     }
 
     .photo-three{
@@ -730,21 +698,44 @@ footer{
     /* section one end  */
 
     .section-two-containers{
-    
         flex-direction: column-reverse;
-        
-       }
+    }
+
+    .two-content{
+        width: 130%;
+        padding-right: 15rem;
+    }
 
        .two-content h4{
         font-family: 'FS Meridian Trial';
         width: 130%;
         font-size: 40px;
         font-weight: 500;
-        padding: 0 2%;
+        padding: 0 1%;
+        /* margin-right: 3rem; */
         margin-bottom: 5%;
-        position: relative;
-        right: 17%;
     }
+
+    .iphone-mages{
+        width: 90%;
+        padding-left: 5%;
+    }
+
+    .facebook-image{
+        left: -10%;
+    }
+
+    .yello-rad{
+        right:-12%;
+    }
+    
+     .green-rad{
+        left: -10%;
+    }
+    
+    .whatsapp{
+        right: -5%;
+    } 
 
     .article{
         display: flex;
@@ -792,32 +783,158 @@ footer{
         display: flex;
         align-items: center;
         justify-content: center;
-        /* height: 80vh; */
-        margin-bottom: 60%;
+        padding: 0 1rem;
        }
 
-    /* .orengs{
-        width: 100%;
-     } */
+       .section-three-containers{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 2rem;
+    }
 
+    .cloud{
+        display: flex;
+        width: 110%;
+    }
+
+    .heading2{
+        font-size: 30px;
+        font-weight: 100;
+        /* padding-top: 3rem; */
+    }
+
+    .star-logo{
+        width: 35%;
+        top: 205%;
+        left: 62%;
+    }
     
+    .star-logo2{
+        margin-left: 12%;
+    }
+
+    .personal{
+        display: grid;
+        padding: 1rem 5rem ;
+        grid-template-columns: 350px;
+    }
+
+    .cards:nth-of-type(2){
+        display: none;
+    }
+
+    .circle-icon{
+          margin-bottom: 12rem;
+      }
     
-    /* .socias{
+    .comunity{
+        flex-direction: column;
+        left: 35px;
+        margin-top: -30%;
+        width: 80%;
+    }
+
+    .last-side{
+        padding: 2rem 3rem;
+        width: 100%;
+        font-size: 25px;
+        font-weight: 200;
+        font-family: 'FS Meridian Trial';
+    }
+
+    .black-btn{
+        text-align: start;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 15px;
+        margin: 3rem;
+    }
+
+    footer{
+        overflow: hidden;
+        width: 100%;
+        height: 85%;
+        margin-top: 10%;
+    }
+
+    .end-fot{
+        width: 100%;
+        margin-left: 10%;
         display: flex;
         flex-direction: column;
         align-items: flex-start;
-        justify-content: flex-start;
-    } */
+        z-index: -1;
+    }
     
+    .om-logo{
+        width: 40%;
+        margin-top: 45%;
+    }
 
-    
-
-    /* .personal{
+    .ipsum{
         display: grid;
-         padding: 1rem 5rem ;
-        grid-template-columns: repeat(1,1fr);
-        gap: 1rem;
-    } */
+        grid-template-columns: repeat(2, 1fr);
+        margin-top: 10%;
+    }
+
+    .ipsum a{
+        margin: 20%;
+        position: relative;
+        bottom: 100%;
+        font-family: 'General Sans';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+    }
+
+    .ipsum a:nth-of-type(2){
+        padding-left: 60%;
+    }
+
+    .ipsum a:nth-of-type(4){
+        padding-left: 60%;
+    }
+
+    .dolar{
+        color: #1FC77E;
+        font-family: 'General Sans';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 16px;
+        text-align: center;
+        letter-spacing: 3px;
+        position: absolute;
+        bottom: 20%;
+        left: 15%;
+    }
+
+    .ip-sum{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin-bottom: 30%;
+        margin-top: 10%;
+    }
+
+    .ip-sum a{
+        margin: 10%;
+        position: relative;
+        bottom: 110%;
+        left: 12%;
+        font-family: 'General Sans';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+    }
+
+    .ip-sum a:nth-of-type(2){
+        padding-left: 60%;
+    }
+
+    .areng{
+        display: none;
+    }
 }
 
 
