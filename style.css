@@ -639,7 +639,8 @@ footer{
     }
 
     .section-one-content{
-        padding: 1%;
+        position: relative;
+        top: 3%;
     }
 
     .content{
@@ -668,15 +669,15 @@ footer{
     }
     
     .photo-2-child{
-        width: 70%;
-        padding-top: 23%;
+        /* width: 70%; */
+        padding-top: 20%;
         z-index: 1;
     }
 
     .photo-two{
         position: absolute;
-        left: 65%;
-        top: 15%;
+        left: 70%;
+        top: 17%;
     }
 
     .photo-three{
