@@ -250,7 +250,6 @@ header{
     color: #3497F9;
 }
 
-
 /* section one images end */
 /* section one end */
 
@@ -592,7 +591,7 @@ footer{
 }
 
 
-@media(max-width: 769px) {
+@media screen and (max-width: 769px) {
     /* Navigation-meun-header start */
     .nav-links ul li{
         display: block;
@@ -639,6 +638,10 @@ footer{
         width: 100%;
     }
 
+    .section-one-content{
+        padding: 1%;
+    }
+
     .content{
         font-size: 40px;
         font-weight: bolder;
@@ -646,23 +649,15 @@ footer{
     }
     
     .shed{
-        /* width: 70%;
-        position: absolute;
-        top: 34%;
-        left:10%;
-        z-index;: -1; */
         display:none;
     }
     
-    /* .section-one-content h3{
-        margin: 0 0 3% 2%;
-    } */
 
     .photo-one{
         display: flex;
         align-items: center;
         position: absolute;
-        bottom:78%;
+        bottom:75%;
     }
     
     .photo-1-child{
@@ -680,8 +675,8 @@ footer{
 
     .photo-two{
         position: absolute;
-        left: 68%;
-        top: 14%;
+        left: 65%;
+        top: 15%;
     }
 
     .photo-three{
@@ -702,18 +697,53 @@ footer{
     }
 
     .two-content{
-        width: 130%;
-        padding-right: 15rem;
+        margin-right: 15rem;
+        width: 100%;
+        /* padding-left: 6%; */
     }
 
        .two-content h4{
-        font-family: 'FS Meridian Trial';
         width: 130%;
+        position: relative;
         font-size: 40px;
-        font-weight: 500;
-        padding: 0 1%;
-        /* margin-right: 3rem; */
-        margin-bottom: 5%;
+        padding-left: 7rem;
+        bottom: 5%;
+        right: 22%;
+    }
+
+    .article{
+        position: relative;
+        right: 23%;
+        padding-left: 5%;
+        padding-bottom: 5%;
+        width: 95%;
+        margin: 5% 0 0 7rem;
+    }
+
+    .support{
+        position: absolute;
+        background-color: #1FC77E;
+        left: 72%;
+        top: 30%;
+        border-radius: 10px;
+    }
+
+    .main-size{
+        width: 80%;
+        padding-top: 3%;
+        padding-right: 1%;
+        font-size: 14px;
+    } 
+
+    .gray-text{
+        position: relative;
+        width: 95%;
+        left: 5%;
+        padding: 6% 0% 7% 10%;
+    }
+
+    .section-two-containers{
+        padding: 20%;
     }
 
     .iphone-mages{
@@ -737,48 +767,6 @@ footer{
         right: -5%;
     } 
 
-    .article{
-        display: flex;
-        align-items: flex-start;
-        justify-content: center;
-        position: relative;
-        background-color: #FFFFFF;
-        color: #000000;
-        font-size: 60%;
-        right: 20%;
-        border: none;
-        border-radius: 5px;
-        padding-left: 5%;
-        padding-bottom: 10%;
-        width: 150%;
-        margin-bottom: 10%;
-    }
-
-    .support{
-        position: absolute;
-        background-color: #1FC77E;
-        left: 75%;
-        top: 30%;
-        border-radius: 10px;
-    }
-
-    .main-size{
-        width: 80%;
-        padding-top: 3%;
-        padding-right: 1%;
-        font-size: 14px;
-    } 
-
-    .gray-text{
-        background-color: rgba(255, 255, 255, 0.2);
-        position: relative;
-        width: 150%;
-        right: 20%;
-        padding: 6% 0% 7% 15%;
-        border: none;
-        border-radius: 5px;
-    }
-
     .section-two-containers{
         display: flex;
         align-items: center;
@@ -795,28 +783,37 @@ footer{
 
     .cloud{
         display: flex;
-        width: 110%;
+        width: 100%;
     }
 
     .heading2{
         font-size: 30px;
-        font-weight: 100;
-        /* padding-top: 3rem; */
+        font-weight: 100%;
+        padding-right: 2px;
+        margin-top: 3rem;
+    }
+
+    .contain-logo{
+        position: relative;
     }
 
     .star-logo{
-        width: 35%;
-        top: 205%;
-        left: 62%;
+        position: absolute;
+        width: 60%;
+        top: 90%;
+        left: 40%;
     }
     
     .star-logo2{
-        margin-left: 12%;
+        width: 50%;
+        margin-left: 2%;
+        margin-top: 8rem;
     }
 
     .personal{
         display: grid;
-        padding: 1rem 5rem ;
+        padding: 1rem 0;
+        /* margin-top: 1px; */
         grid-template-columns: 350px;
     }
 
@@ -831,7 +828,7 @@ footer{
     .comunity{
         flex-direction: column;
         left: 35px;
-        margin-top: -30%;
+        margin-top: -40%;
         width: 80%;
     }
 
@@ -851,16 +848,9 @@ footer{
         margin: 3rem;
     }
 
-    footer{
-        overflow: hidden;
-        width: 100%;
-        height: 85%;
-        margin-top: 10%;
-    }
-
     .end-fot{
-        width: 100%;
-        margin-left: 10%;
+        position: relative;
+        width: 80%; 
         display: flex;
         flex-direction: column;
         align-items: flex-start;
@@ -869,21 +859,19 @@ footer{
     
     .om-logo{
         width: 40%;
-        margin-top: 45%;
+        margin-top: 50%;
     }
 
     .ipsum{
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        margin-top: 10%;
+        grid-template-columns: repeat(2, 100px);
     }
 
     .ipsum a{
-        margin: 20%;
+        padding-bottom: 5%;
+        margin-left: 20%;
         position: relative;
-        bottom: 100%;
-        font-family: 'General Sans';
-        font-style: normal;
+        bottom: 120%;
         font-weight: 500;
         font-size: 20px;
     }
@@ -898,33 +886,24 @@ footer{
 
     .dolar{
         color: #1FC77E;
-        font-family: 'General Sans';
-        font-style: normal;
         font-weight: 600;
         font-size: 18px;
-        line-height: 16px;
-        text-align: center;
         letter-spacing: 3px;
         position: absolute;
-        bottom: 20%;
-        left: 15%;
+        bottom: 27%;
+        left: 7%;
     }
 
     .ip-sum{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        margin-bottom: 30%;
-        margin-top: 10%;
+        margin-bottom: 5%;
     }
 
     .ip-sum a{
         margin: 10%;
         position: relative;
-        bottom: 110%;
         left: 12%;
-        font-family: 'General Sans';
-        font-style: normal;
-        font-weight: 500;
         font-size: 20px;
     }
 
