@@ -12,13 +12,18 @@ body{
     /* overflow: hidden; */
 }
 header{
-    width: 100%;
+    /* width: 100%; */
     height: 100%;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 /* Navigation-meun-header start  */
- 
-.header-menu{
+ .nav-links  i{
+    display: none;
+ }
+ #close-menu,#open-menu{
+    display: none;
+ }
+nav{
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -30,15 +35,15 @@ header{
     width: 20%;
 }
 
-.nav-links{
+/* .nav-links{
     flex: 1;
     text-align: right;
-}
+} */
 
-.nav-links ul li{
+.nav-links ul{
     list-style-type: none;
-    display: inline-block;
-    padding: 8px 12px;
+    display: flex;
+    gap: 1rem;
 }
 
 .nav-links ul li a{
@@ -47,7 +52,7 @@ header{
     font-size: 17px;
 }
 
-.nav-links a::after{
+.nav-links li a::after{
     content: '';
     width: 0%;
     height: 2px;
@@ -57,13 +62,10 @@ header{
     transition: 0.5s;
 }
 
-.nav-links a:hover::after{
+.nav-links li a:hover::after{
     width: 100%;
 }
 
-.header-menu .fas{
-    display: none;
-}
 
 /* Navigation-meun-header end  */
 
@@ -76,13 +78,8 @@ header{
     grid-template-columns: 1fr 1fr;
 }
 
-
 .section-one-content{
     margin-left: 39px;
-}
-
-.section-two-content{
-    margin-bottom: 20%;
 }
 
 .content{
@@ -126,124 +123,82 @@ header{
 
 /* section one images start */
 
+
 .photo-one{
+    width: 100%;
     display: flex;
+    flex-direction: row;
     align-items: center;
+    gap: 3%;
 }
 
 .photo-1-child{
-    position: absolute;
-    width: 22%;
-    margin-top: 6%;
-    /* margin-bottom: 1%; */
-    margin-left: 7%; 
-    z-index: -1;
+    margin-bottom: 5%;
+    padding-bottom: 20%;
 }
 
-.photo-2-child{
-    width: 40%;
-    margin-top: 2%;
-    margin-right: 40%;
-    margin-left: 15%;
-    z-index: 1;
-}
-
-.photo-two{
-    position: absolute;
-    background-color: #7F3DD2;
-    border-radius: 50%;
-    left: 80%;
-    top: 30%;
-    padding-top: 2%;
-    padding-bottom: 2%;
-    padding-left: 2%;
-    padding-right: 2%;
-    z-index: 1;
+.ph-a{
+    margin-bottom: 15%;
 }
 
 .photo-three{
-    position: absolute;
-    background-color: #1FC77E;
-    border-radius: 50%;
-    right: 40%;
-    top: 50%;
-    padding-top: 2%;
-    padding-bottom: 2%;
-    padding-left: 2%;
-    padding-right: 2%;
-    z-index: 1;
-}
-
-.picture{
     display: flex;
-    align-items: center;
-    /* margin-bottom: 3rem; */
-}
-
-.pictures-1{
     position: absolute;
-    right: 11%;
-    z-index: -1;
+    /* gap: 5%; */
+    top: 53%;
 }
 
 .pic{
-    margin-left: 34%;
-    margin-bottom: 5%;
+    padding: 2rem 1rem 2rem 2rem;
+}
+
+.seak{
+    position: relative;
+   bottom: 15%;
 }
 
 .gpt-update{
     display: flex;
     align-items: center;
+    flex-direction: column;
+    margin-top: 7%;
+    margin-right: 5%;
 }
 
 .office{
-    width: 30%;
-    position: absolute;
-    right: 14%;
-    top: 75%;
+    width: 80%;
     z-index: -1;
-}
-
-.coloring{
-    position: absolute;
-    width: 22%;
-    top: 92%;
-    left: 55%;
-    z-index: -1;
-}
-
-.smile-lady{
-    position: absolute;
-    width: 20%;
-    left: 55%;
-    top: 70%;
-    /* margin-bottom: 0%; */
-    z-index: 1;
-}
-
-.flex-colors{
-    position: absolute;
-    top: 95%;
-    right: 13%;
 }
 
 .conments{
-    position: relative;
-    bottom: 13%;
-    left: 20%;
-    padding-right: 14%;
-    padding-left: 15%;
+    width: 15%;
+    position: absolute;
+    left: 66%;
+    top: 91%;
 }
 
 .che-bouble{
-    font-size: 14px;
-    font-weight: 400;
-    padding-top: 10%;
-    padding-right: 35%;
+    position: absolute;
+    top: 97%;
+    left: 78%;
+    display: flex;
+    gap: 1px;
 }
 
-.che-bouble span {
+.fa-check-double{
     color: #3497F9;
+}
+
+
+.coloring{
+    position: absolute;
+    right: 23%;
+    top: 82%;
+}
+
+.flex-colors{
+    margin-top: 50%;
+    margin-left: 100%;
 }
 
 #time{
@@ -383,29 +338,19 @@ header{
 
 .cloud{
     display: flex;
-    /* align-items: center; */
-    /* flex-direction: column; */
 }
 
 .heading2{
     width: 50%;
-    /* position: absolute; */
     font-size: 50px;
     font-weight: 400;
     font-family: 'FS Meridian Trial';
-    /* left: 9%;
-    top: 265%; */
-    /* padding-left: 1%; */
 }
 
 .heading2 span{
     color: #1FC77E;
 }
 
-/* .parent-logo{
-    display: flex;
-    align-items: flex-end;
-} */
 
 .star-logo{
     position: absolute;
@@ -416,7 +361,6 @@ header{
 .star-logo2{
     margin-left: 100%;
 }
-
 
 .personal{
     display: grid;
@@ -593,91 +537,98 @@ footer{
 
 @media screen and (max-width: 769px) {
     /* Navigation-meun-header start */
-    .nav-links ul li{
-        display: block;
+
+    nav{padding: 1rem;
+    margin: auto;}
+    .nav-links ul {
+     flex-direction: column;  
+     gap: 3rem;
+     margin: 50px;
     }
 
     .nav-links{
-        position: absolute;
-        background: #f44336;
-        height: 100vh;
-        width: 200px;
-        top: 0;
-        right: -200px;
-        text-align: left;
-        z-index: 2;
-        transition: 1s;
-        overflow: hidden;
+    position: absolute;
+    background-color: red;
+    width: 300px;
+    height: 100vh;
+    top: 0;
+    right: -300px;
+    overflow: hidden;
+    z-index: 2;
+    text-align: center;
+    transition: all .3s;
     }
+
     /* nav-menu */
-    .header-menu .fas{
+    #open-menu{
+        display: block;
+        color: #fff;
+        font-size: 22px;
+        cursor: pointer;
+    }
+    
+    #close-menu{
         display: block;
         color: #fff;
         margin: 10px;
         font-size: 22px;
         cursor: pointer;
-    }
-
-    .header-menu{
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        overflow: hidden;
+        text-align: right;
     }
     
     .logo{
         width: 30%;
-        margin-bottom: 10%;
+        /* margin-bottom: 10%; */
     }
+    .nav-links li a:hover::after{
+        width: 80%;
+    }
+    
 
     .section-one-container{
         display: grid;
         grid-template-columns:  repeat(1, 1fr);
-        align-items: center;
-        justify-content: center;
         width: 100%;
     }
 
     .section-one-content{
+        width: 90%;
         position: relative;
-        top: 3%;
+        right: 5%;
+        top: 10%;
     }
 
     .content{
-        font-size: 40px;
+        font-size: 45px;
         font-weight: bolder;
-        padding: 25% 4% 3% 1%;
+        padding: 23% 1% 1% 1%;
     }
     
     .shed{
         display:none;
     }
-    
 
-    .photo-one{
-        display: flex;
-        align-items: center;
+    .section-two-content{
         position: absolute;
-        bottom:75%;
+        top: 12%;
+    }
+    
+    .photo-one{
+        position: relative;
     }
     
     .photo-1-child{
         position: absolute;
-        width: 65%;
-        top: 50%; 
-        z-index: -1;
-    }
-    
-    .photo-2-child{
-        /* width: 70%; */
-        padding-top: 20%;
-        z-index: 1;
+        width: 190%;
+        bottom: -7%;
+        left: 20%; 
     }
 
-    .photo-two{
-        position: absolute;
-        left: 70%;
-        top: 17%;
+    .ph-a{
+        position: relative;
+        width: 65%;
+        left: 225%;
+        padding-top: 10%;
     }
 
     .photo-three{
@@ -695,9 +646,15 @@ footer{
 
     .section-two-containers{
         flex-direction: column-reverse;
+        padding: 0 1rem;
+    }
+
+    .meadi{
+    width: 70%;
     }
 
     .two-content{
+        margin-top: 30%;
         margin-right: 15rem;
         width: 100%;
         /* padding-left: 6%; */

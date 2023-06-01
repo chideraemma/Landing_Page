@@ -1,10 +1,13 @@
 // JavaScript for Toggle Menu
-var navLinks = document.getElementById('navLinks');
+let navBar = document.getElementById("navLinks");
+let openMenu = document.getElementById("open-menu");
+let closeMenu=document.getElementById("close-menu"); 
 
-function showMenu(){
-    navLinks.style.right = "0";
-}
-
-function hideMenu(){
-    navLinks.style.right = "-200px";
-}
+openMenu.addEventListener("click", function(){
+navBar.style.right= "0"  ;
+// console.log("ok");
+})
+closeMenu.addEventListener("click", function(){
+    navBar.style.right='-300px';
+    // console.log("ok");
+});
