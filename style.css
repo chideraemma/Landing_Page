@@ -8,7 +8,7 @@ body{
     background-color: #111826;
     color: #FFFFFF;
     width: 100%;
-    /* overflow: hidden; */
+
 }
 
 nav{
@@ -519,7 +519,7 @@ footer{
      right: 0;
      width: 200px;
      height: 100vh;
-     background-color: red;
+     background-color: #111826;
      z-index: 2;
      overflow: hidden;
   } 
