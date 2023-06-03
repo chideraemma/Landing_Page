@@ -2,73 +2,48 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* border: 1px solid red; */
 } 
 
 body{
     background-color: #111826;
     color: #FFFFFF;
-    /* width: 100%; */
+    width: 100%;
     /* overflow: hidden; */
 }
-header{
-    /* width: 100%; */
-    height: 100%;
-    /* overflow: hidden; */
-}
-/* Navigation-meun-header start  */
- .nav-links  i{
-    display: none;
- }
- #close-menu,#open-menu{
-    display: none;
- }
+
 nav{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 2rem;
-    /* margin: 2% 5% 0 5%; */
-}
-
-.logo{
-    width: 20%;
-}
-
-/* .nav-links{
-    flex: 1;
-    text-align: right;
-} */
-
-.nav-links ul{
-    list-style-type: none;
-    display: flex;
-    gap: 1rem;
-}
-
-.nav-links ul li a{
-    color: #FFFFFF;
-    text-decoration: none;
-    font-size: 17px;
-}
-
-.nav-links li a::after{
-    content: '';
-    width: 0%;
-    height: 2px;
-    background: #ffe100;
-    display: block;
-    margin: auto;
-    transition: 0.5s;
-}
-
-.nav-links li a:hover::after{
-    width: 100%;
-}
-
-
+    padding: 1rem 3rem;
+    }
+    
+    .menu ul{
+        display: flex;
+        gap: 1rem;
+        list-style: none;
+    }
+    .logo{
+        width: 30%;
+    }
+    .logo img{
+        height: 40px;
+    }
+  .menu a{
+        color: #FFFFFF;
+        text-decoration: none;
+    }
+    
+    .menu a:hover{
+        text-decoration: underline;
+        transition: 0.5s;
+        color: #ffe100;
+    }
+    
+     #open-slide,#close{
+        display: none;
+    }
 /* Navigation-meun-header end  */
-
 
 /* section one start */
 
@@ -89,9 +64,10 @@ nav{
 }
 
 .shed{
+    width: 40%;
     position: absolute;
-    top: 50%;
-    left:2%;
+    top: 45%;
+    left:1%;
     z-index: -1;
 }
 
@@ -123,7 +99,6 @@ nav{
 
 /* section one images start */
 
-
 .photo-one{
     width: 100%;
     display: flex;
@@ -144,8 +119,7 @@ nav{
 .photo-three{
     display: flex;
     position: absolute;
-    /* gap: 5%; */
-    top: 53%;
+    top: 48%;
 }
 
 .pic{
@@ -161,7 +135,7 @@ nav{
     display: flex;
     align-items: center;
     flex-direction: column;
-    margin-top: 7%;
+    margin-top: 6%;
     margin-right: 5%;
 }
 
@@ -174,12 +148,12 @@ nav{
     width: 15%;
     position: absolute;
     left: 66%;
-    top: 91%;
+    top: 84%;
 }
 
 .che-bouble{
     position: absolute;
-    top: 97%;
+    top: 93%;
     left: 78%;
     display: flex;
     gap: 1px;
@@ -189,11 +163,10 @@ nav{
     color: #3497F9;
 }
 
-
 .coloring{
     position: absolute;
     right: 23%;
-    top: 82%;
+    top: 77%;
 }
 
 .flex-colors{
@@ -351,7 +324,6 @@ nav{
     color: #1FC77E;
 }
 
-
 .star-logo{
     position: absolute;
     top: 277%;
@@ -386,7 +358,6 @@ nav{
     font-weight: 500;
     padding: 5% 0;
 }
-
 
 .luke{
     display: flex;
@@ -538,53 +509,47 @@ footer{
 @media screen and (max-width: 769px) {
     /* Navigation-meun-header start */
 
-    nav{padding: 1rem;
-    margin: auto;}
-    .nav-links ul {
-     flex-direction: column;  
-     gap: 3rem;
-     margin: 50px;
+    nav{
+        padding: 1rem;
+    }
+   .menu{
+     position: absolute;
+     display: none;
+     top: 0;
+     right: 0;
+     width: 200px;
+     height: 100vh;
+     background-color: red;
+     z-index: 2;
+     overflow: hidden;
+  } 
+.menu ul{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10%;
+}
+
+ #open-slide,#close{
+    display: block;
+    cursor: pointer;
+}
+    .navbar-nav{
+        display: none;
     }
 
-    .nav-links{
-    position: absolute;
-    background-color: red;
-    width: 300px;
-    height: 100vh;
-    top: 0;
-    right: -300px;
-    overflow: hidden;
-    z-index: 2;
-    text-align: center;
-    transition: all .3s;
+    .navbar-nav a{
+        display: none;
     }
 
-    /* nav-menu */
-    #open-menu{
-        display: block;
-        color: #fff;
-        font-size: 22px;
-        cursor: pointer;
-    }
-    
-    #close-menu{
-        display: block;
-        color: #fff;
-        margin: 10px;
-        font-size: 22px;
-        cursor: pointer;
-        text-align: right;
-    }
-    
-    .logo{
-        width: 30%;
-        /* margin-bottom: 10%; */
-    }
-    .nav-links li a:hover::after{
-        width: 80%;
-    }
-    
+    .fa-bars{
+        position: absolute;
+        left: 83%;
+        bottom: 93%;
+    }    
 
+    .logo img{
+        width: 100%;
+    }
     .section-one-container{
         display: grid;
         grid-template-columns:  repeat(1, 1fr);
@@ -615,12 +580,13 @@ footer{
     
     .photo-one{
         position: relative;
+        margin-top: 15%;
     }
     
     .photo-1-child{
         position: absolute;
         width: 190%;
-        bottom: -7%;
+        bottom: -20%;
         left: 20%; 
     }
 
@@ -628,6 +594,7 @@ footer{
         position: relative;
         width: 65%;
         left: 225%;
+       /* margin-bottom: 30%; */
         padding-top: 10%;
     }
 
@@ -657,7 +624,6 @@ footer{
         margin-top: 30%;
         margin-right: 15rem;
         width: 100%;
-        /* padding-left: 6%; */
     }
 
        .two-content h4{

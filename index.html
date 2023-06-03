@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Landing-Pages</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
@@ -13,18 +12,23 @@
     <!-- Navigation-meun-header start -->
     <header>
         <nav>
-        <img src="img/Group 13340.png" alt="" class="logo">
-
-        <div class="nav-links" id="navLinks">
-            <i class="fas fa-solid fa-xmark"  id="close-menu"></i>
+        <div class="logo">
+        <img src="img/Group 13340.png" alt="">
+        </div>
+    
+        <div class="menu" id="menu">
+            <i class="fas fa-regular fa-xmark" onclick="hideMenu()" id="open-slide"></i>
+          
         <ul>
-            <li><a href="#">Blog</a></li>
-            <li><a href="#">Contact Us</a></li>
-            <li><a href="#">Sign In</a></li>
+            <a href="#">Blog</a>
+            <a href="#">Contact Us</a>
+            <a href="#">Sign In</a>
         </ul>
-      </div>
-     <i class="fas fa-solid fa-bars"  id="open-menu"></i>
+        </div>
+        <i class="fa-solid fa-bars" onclick="showMenu()"  id="close"></i> 
     </nav>
+        
+
         
         <!-- Navigation-m  -->
          <section class="section-one-container">
